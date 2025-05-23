@@ -1,0 +1,920 @@
+/* ------------------ couleur ------------------
+white and black
+red (formulaire*)
+aqua (link)
+rgb(220,240, 220) (body)
+ #EEE5DA (footer et header)
+ #dde1e3(formulaire)
+ couleur page commande:
+ background-color: #A7B5C0;
+background-color: #B0C4B1; 
+------------------------------------ */
+
+/*------------------ général ------------------*/
+* {
+	box-sizing: border-box;
+
+}
+
+main {
+	margin: 5% 0% 5% 0%;
+}
+
+.wid-15 {
+	width: 15%;
+}
+
+.wid-30 {
+	width: 30%;
+}
+
+.wid-40 {
+	width: 40%;
+}
+
+.wid-45 {
+	width: 45%;
+}
+
+.wid-55 {
+	width: 55%;
+}
+
+.wid-60 {
+	width: 60%;
+}
+
+.height-40 {
+	height: 40%;
+}
+
+span {
+	color: red;
+
+}
+
+/*------------------------------------*/
+
+/*------------------ container et propriété utile ------------------*/
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/*justify-content*/
+.jspace-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+.jspace-around {
+	display: flex;
+	justify-content: space-around;
+}
+
+.jspace-evenly {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.jspace-center {
+	display: flex;
+	justify-content: center;
+}
+
+.jflex-start {
+	display: flex;
+	justify-content: flex-start;
+}
+
+/**/
+
+/*wrap*/
+.space {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/**/
+
+/*flex*/
+.flex {
+	display: flex;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+/**/
+
+/*align-items*/
+.align-itemsc {
+	display: flex;
+	align-items: center;
+}
+
+/**/
+/*------------------------------------*/
+
+/*------------------ typographie ------------------*/
+@font-face {
+	font-family: Police;
+	src: url(../fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+	font-family: TitrePolice;
+	src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+body {
+	font-family: Police;
+	font-size: 1.2rem;
+	line-height: 1.5;
+	margin: 0 auto;
+	background-color: rgb(220, 240, 220);
+	text-align: justify;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: TitrePolice;
+}
+
+/*------------------------------------*/
+
+/*------------------ Footer ------------------ */
+footer {
+	font-size: 0.8rem;
+	background-color: #EEE5DA;
+}
+
+/* border dans le footer*/
+.border-dec {
+	border-top: 2px solid white;
+}
+
+.border-dec p {
+	margin-left: 0.5%;
+	margin-right: 1%;
+}
+
+.border-dec a {
+	margin-right: 1%;
+}
+
+.border-dec p {
+	text-decoration: underline;
+}
+
+/**/
+/*------------------------------------*/
+
+/*------------------ Header ------------------ */
+header {
+	background-color: #EEE5DA;
+}
+
+/* commande dans le header*/
+.commande {
+	border: 2px solid white;
+	border-radius: 5px;
+	padding: 5px;
+	box-shadow: 3px 3px 6px black, -3px -3px 6px white;
+}
+
+/**/
+
+/*la page ourverte*/
+.ouvert {
+	text-decoration: none;
+}
+
+/**/
+/* menu*/
+#menu-btn {
+	font-size: 48px;
+	background: none;
+	border: none;
+	display: none;
+	margin-right: 25%;
+}
+
+/**/
+/*------------------------------------*/
+
+/*------------------ liens et liste ------------------*/
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+a {
+	padding: 5px 5px;
+
+}
+
+/* Couleur des liens non visités*/
+a:link {
+	color: black;
+}
+
+/**/
+
+/* Couleur des liens visités */
+a:visited {
+	color: black;
+}
+
+/**/
+
+/* Couleur des liens survolés */
+a:hover {
+	color: aqua;
+}
+
+/**/
+
+/* Couleur des liens actifs */
+a:active {
+	color: red;
+}
+
+/**/
+/*------------------------------------*/
+
+/* ------------------page accueil ------------------*/
+
+.grid-accueil {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 3%;
+	margin: 2% 2% 8% 2%;
+}
+
+.grid-accueil p {
+	margin: 0% 4% 4% 4%;
+}
+
+.grid-accueil2 {
+	background-color: white;
+}
+
+.grid-acc {
+	margin-left: 5%;
+}
+
+.grid-acc i {
+	border: 2px solid black;
+	padding: 5px;
+	border-radius: 50%;
+}
+
+.grid-acc h4 {
+	margin-left: 2%;
+}
+
+.acc a {
+	text-decoration: none;
+}
+
+.acc a:hover {
+	color: rgb(220, 240, 220);
+}
+
+.commande-acc {
+	border: 2px solid white;
+	border-radius: 45%;
+	background-color: white;
+	box-shadow: 3px 3px 6px black, -3px -3px 6px white;
+}
+
+.reservation-acc {
+	border: 2px solid white;
+	border-radius: 50%;
+	background-color: white;
+	box-shadow: 3px 3px 6px black, -3px -3px 6px white;
+	margin-left: 4%;
+}
+
+/*------------------------------------*/
+
+/*------------------ page reservation ------------------*/
+.submit {
+	display: flex;
+	justify-content: flex-end;
+	align-content: center;
+	margin-right: 10%;
+}
+
+.submit input[type="submit"] {
+	background: white;
+	border: none;
+	padding: 12px 12px;
+	font-size: 16px;
+	color: black;
+	font-weight: bold;
+	border-radius: 50%;
+	box-shadow: 4px 4px 10px black;
+}
+
+.submit input[type="submit"]:hover {
+	background: #EEE5DA;
+	box-shadow: 6px 6px 15px black;
+}
+
+label {
+	margin-top: 3%;
+}
+
+#form3 {
+	margin-bottom: 10%;
+	margin-top: 3%;
+}
+
+#form3 textarea {
+	resize: vertical;
+}
+
+.info {
+	margin-top: 5%;
+}
+
+fieldset {
+	background-color: #dde1e3;
+	border-radius: 2%;
+	box-shadow: 2px 2px 4px black, -2px -2px 4px black;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+legend {
+	padding-top: 5%;
+	font-weight: 500;
+}
+
+/*------------------------------------*/
+
+/*------------------ page envoyer ------------------*/
+.envoyer {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 5%;
+	font-size: 1.2rem;
+}
+
+.envoyer a {
+	text-decoration: none;
+	color: black;
+}
+
+.envoyer a:hover {
+	color: white;
+}
+
+/*------------------------------------*/
+
+/*------------------ page restaurant ------------------*/
+.top {
+	margin-top: 10%;
+}
+
+.iframe {
+	border-radius: 2%;
+	box-shadow: 2px 2px 10px black;
+}
+
+.dec {
+	text-decoration: none;
+}
+
+.grid-restaurant {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 3%;
+}
+
+.grid-restaurant img {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	box-shadow: 2px 2px 10px black;
+}
+
+#img1 {
+	grid-row: 1/2;
+	grid-column: 1/2;
+}
+
+#img2 {
+	grid-row: 1/2;
+	grid-column: 2/3;
+}
+
+#img3 {
+	grid-row: 1/3;
+	grid-column: 3/5;
+}
+
+#img4 {
+	grid-row: 2/4;
+	grid-column: 1/3;
+}
+
+#img5 {
+	grid-row: 3/4;
+	grid-column: 3/4;
+}
+
+#img6 {
+	grid-row: 3/4;
+	grid-column: 4/5;
+}
+
+/*------------------------------------*/
+
+/*------------------ page commande ------------------*/
+th,
+td {
+	padding: 15px;
+}
+
+table,
+th,
+td {
+	border: 2px solid rgb(220, 240, 220);
+}
+
+th {
+	padding-left: 0px;
+	font-weight: normal;
+}
+
+thead th {
+	font-style: italic !important;
+}
+
+table {
+	margin: 25px;
+	width: 80%;
+	margin-left: 0px;
+	background-color: #dde1e3;
+	font-size: 0.8rem;
+}
+
+caption {
+	text-align: left;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.btop {
+	border-top: 2px solid rgb(220, 240, 220);
+
+}
+
+tbody tr:nth-child(even) {
+	background-color: #dde1e3;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #A7B5C0;
+}
+
+.colorcommandetotal {
+	margin-top: 51px;
+	background-color: #B0C4B1;
+}
+
+.colorcommandetotal h2 {
+	margin: 0;
+}
+
+.commander {
+	background-color: black;
+}
+
+.commander a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	padding: 8px 20px 8px 20px;
+}
+
+.marcommande {
+	padding: 0px 20px 10px 20px;
+}
+
+.table-container {
+	overflow-x: auto;
+	width: 60%;
+	display: block;
+}
+
+table {
+	width: max-content;
+	min-width: 60%;
+}
+
+table::-webkit-scrollbar {
+	height: 12px;
+}
+
+table::-webkit-scrollbar-track {
+	background: #EEE5DA;
+}
+
+table::-webkit-scrollbar-thumb {
+	background: #A7B5C0;
+	border-radius: 6px;
+}
+
+/*------------------------------------*/
+/* ------------------------------------------------- */
+/* --------------- RESPONSIVE ---------------------- */
+/* ------------------------------------------------- */
+
+@media screen and (max-width: 1250px) {
+
+	/* ------------------général ------------------*/
+	.container {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+
+	body {
+		font-size: 1rem;
+	}
+
+	main {
+		margin: 7% 0% 8% 0%;
+	}
+
+	/* ------------------------------------*/
+	/* ------------------header ------------------*/
+	header img {
+		width: 50%;
+	}
+
+	/* ------------------------------------*/
+	/* ------------------footer ------------------*/
+	footer .wid-15 {
+		width: 20%;
+	}
+
+	/* ------------------------------------*/
+	/* ------------------page accueil ------------------*/
+	#index1 {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#index1 .wid-40,
+	.wid-55 {
+		width: 100%;
+	}
+
+	#index1 ul {
+		justify-content: center;
+		margin-bottom: 5%;
+	}
+
+	/* ------------------------------------*/
+	/* ------------------ page reservation ------------------ */
+	#reservationp .wid-45 {
+		width: 35%;
+	}
+
+	#form2 {
+		width: 55% !important;
+	}
+
+	/* ------------------------------------*/
+	/*------------------ page envoyer ------------------*/
+	.envoyer {
+		font-size: 0.9rem;
+		margin-top: 20%;
+	}
+
+	/* ------------------------------------*/
+	/*------------------ page restaurant ------------------*/
+	.grid-restaurant {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	#img1 {
+		grid-row: 1 / 2;
+		grid-column: 1 / 2;
+	}
+
+	#img2 {
+		grid-row: 1 / 2;
+		grid-column: 2 / 4;
+	}
+
+	#img3 {
+		grid-row: 2 / 3;
+		grid-column: 1 / 3;
+	}
+
+	#img4 {
+		grid-row: 2 / 3;
+		grid-column: 3 / 4;
+	}
+
+	#img5 {
+		grid-row: 3 / 4;
+		grid-column: 1 / 2;
+	}
+
+	#img6 {
+		grid-row: 3 / 4;
+		grid-column: 2 / 4;
+	}
+
+	.top {
+		margin-top: 25%;
+	}
+
+	/* ------------------------------------*/
+	/*------------------ page commande ------------------*/
+	/* ------------------------------------*/
+}
+
+@media screen and (max-width: 960px) {
+
+	/* ------------------général ------------------*/
+	body {
+		font-size: 0.8rem;
+	}
+
+	main {
+		margin: 10% 0% 12% 0%;
+	}
+
+	/* ------------------------------------*/
+	/* ------------------header ------------------*/
+	#menu {
+		display: none;
+		flex-direction: column;
+		width: 200px;
+		padding: 2%;
+	}
+
+	#menu li {
+		padding: 10px;
+	}
+
+	#menu-btn {
+		display: block;
+	}
+
+	.show {
+		display: flex !important;
+	}
+
+	/* ------------------------------------*/
+	/* ------------------footer ------------------*/
+	footer .wid-15 {
+		width: 35%;
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 2%;
+	}
+
+	/* ------------------------------------*/
+	/* ------------------page accueil ------------------*/
+	.grid-accueil {
+		grid-template-columns: 1fr 1fr;
+		margin: 2% 2% 16% 2%;
+	}
+
+	/* ------------------------------------*/
+	/* ------------------ page reservation ------------------ */
+	#fieldset {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#fieldset2 {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.submit {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 8%;
+	}
+
+	#reservationp .wid-45 {
+		width: 100% !important;
+		margin-bottom: 5%;
+	}
+
+	/* ------------------------------------*/
+	/*------------------ page envoyer ------------------*/
+	.envoyer {
+		font-size: 0.5rem;
+	}
+
+	/* ------------------------------------*/
+	/*------------------ page restaurant ------------------*/
+	.grid-restaurant {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	#img1 {
+		grid-row: 1/2;
+		grid-column: 1/2;
+	}
+
+	#img2 {
+		grid-row: 1/2;
+		grid-column: 2/3;
+	}
+
+	#img3 {
+		grid-row: 1/2;
+		grid-column: 3/4;
+	}
+
+	#img4 {
+		grid-row: 2/3;
+		grid-column: 1/2;
+	}
+
+	#img5 {
+		grid-row: 2/3;
+		grid-column: 2/3;
+	}
+
+	#img6 {
+		grid-row: 2/3;
+		grid-column: 3/4;
+	}
+
+	#maps {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#maps .wid-45 {
+		width: 100%;
+	}
+
+	#maps2 {
+		margin-bottom: 5%;
+	}
+
+	.top {
+		margin-top: 10%;
+	}
+
+	/* ------------------------------------*/
+	/*------------------ page commande ------------------*/
+	/* ------------------------------------*/
+}
+
+@media screen and (max-width: 570px) {
+
+	/* ------------------général ------------------*/
+	main {
+		margin: 12% 0% 25% 0%;
+	}
+
+	/* ------------------------------------*/
+	/* ------------------header ------------------*/
+	/* ------------------------------------*/
+	/* ------------------footer ------------------*/
+	footer .wid-15 {
+		width: 45%;
+	}
+
+	.fot570 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.border-dec2 {
+		border-top: 2px solid white;
+		padding-top: 10px;
+		margin-top: 0;
+	}
+
+	/* ------------------page accueil ------------------*/
+	.grid-accueil {
+		grid-template-columns: 1fr;
+		margin: 4% 4% 48% 4%;
+	}
+
+	/* ------------------------------------*/
+	/* ------------------ page reservation ------------------ */
+	/* ------------------------------------*/
+	/*------------------ page envoyer ------------------*/
+	.envoyer {
+		font-size: 0.4rem;
+	}
+
+	/* ------------------------------------*/
+	/*------------------ page restaurant ------------------*/
+	.grid-restaurant {
+		grid-template-columns: 1fr 1fr;
+		margin-bottom: 20%;
+	}
+
+	#img1 {
+		grid-row: 1/2;
+		grid-column: 1/2;
+	}
+
+	#img2 {
+		grid-row: 1/2;
+		grid-column: 2/3;
+	}
+
+	#img3 {
+		grid-row: 2/3;
+		grid-column: 1/2;
+	}
+
+	#img4 {
+		grid-row: 2/3;
+		grid-column: 2/3;
+	}
+
+	#img5 {
+		grid-row: 3/4;
+		grid-column: 1/2;
+	}
+
+	#img6 {
+		grid-row: 3/4;
+		grid-column: 2/3;
+	}
+
+	/* ------------------------------------*/
+	/*------------------ page commande ------------------*/
+	.sizeh3 h3 {
+		font-size: 0.6rem;
+	}
+
+	#jus {
+		display: flex;
+		justify-content: center;
+	}
+
+	/* ------------------------------------*/
+}
+
+/* ------------------------------------*/
+@media screen and (max-width: 450px) {
+	.envoyer {
+		font-size: 0.3rem;
+	}
+
+	.grid-accueil {
+		grid-template-columns: 1fr;
+		margin: 4% 4% 70% 4%;
+	}
+
+	footer .wid-15 {
+		width: 50%;
+	}
+
+	footer {
+		font-size: 0.7rem;
+	}
+
+	body {
+		font-size: 0.7rem;
+	}
+
+	.sizeh3 h3 {
+		font-size: 0.5rem;
+	}
+}
+
+@media (max-width: 360px) {
+	body {
+		min-width: 360px;
+		overflow-x: auto;
+	}
+}
+
+/* ------------------------------------*/

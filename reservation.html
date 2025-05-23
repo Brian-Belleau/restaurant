@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reservation sur le site de mon restaurant">
+    <title>Reservation </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="container">
+
+    <header class="jspace-between align-itemsc">
+        <a href="index.html" class="wid-40 height-40"><img src="img/logo.png" alt="Le logo"></a>
+        <nav>
+            <button id="menu-btn" class="menu-icon">☰</button>
+            <ul class="jspace-evenly" id="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="reservation.html" class="ouvert">Réservation</a></li>
+                <li><a href="restaurant.html">Restaurant</a></li>
+                <li><a href="commande.html" class="commande">Ma commande</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section id="reservationp">
+            <h1>Planifier votre réservation :</h1>
+            <form method="post" id="form-reservation" action="envoyer.html" target="_blank">
+                <div class="jspace-between" id="fieldset">
+                    <fieldset class="flex-column wid-45">
+                        <legend>Information personelle</legend>
+
+                        <label for="txt-pre">Quel est votre prénom?<span> *</span></label>
+                        <input type="text" id="txt-pre" name="text-pre" placeholder="Entrez votre prénom" maxlength="30"
+                            required>
+
+                        <label for="txt-nom">Quel est votre nom?<span> *</span></label>
+                        <input type="text" id="txt-nom" name="text-nom" placeholder="Entrez votre nom" maxlength="30"
+                            required>
+
+                        <label for="phone">Quel est votre numéro de téléphone?<span> *</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="Entrez votre numéro ex:1112223333"
+                            maxlength="10" required>
+
+                    </fieldset>
+                    <fieldset id="form2" class="flex-column wid-45">
+                        <legend>Information sur la réservation</legend>
+
+
+                        <label for="endroit">Réservation en salle à manger ou en terrasse?<span> *</span></label>
+                        <Select id="endroit" name="endroit" required>
+                            <option value="" selected>-Faire un choix</option>
+                            <option value="salle à manger">Salle à manger</option>
+                            <option value="terrasse">Terrasse</option>
+                        </Select>
+
+                        <label for="reservation">À quel heure sera votre réservation?<span> *</span></label>
+                        <Select id="reservation" name="reservation" required>
+                            <option value="" selected>-Faire un choix</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                        </Select>
+
+                        <label for="date-naissance">À quel date voulez-vous réserver?<span> *</span></label>
+                        <input type="date" id="date-naissance" name="date-naissance" required>
+
+                        <label for="nbr-personne">Vous serez combien pour votre réservation?<span> *</span></label>
+                        <input type="number" id="nbr-personne" name="nbr-personne" value="1" min="1" max="25" required>
+
+
+
+                    </fieldset>
+                </div>
+                <div id="fieldset2" class="jspace-between align-itemsc">
+                    <fieldset id="form3" class="wid-45 flex-column">
+
+                        <Legend>Information Optionelle</Legend>
+
+                        <label for="comment">Laissez un commentaire :</label>
+                        <textarea id="comment" name="comment" placeholder="Votre commentaire ici..."></textarea>
+
+                        <label for="email-courriel">Laisser nous votre courriel :</label>
+                        <input type="email" id="email-courriel" name="email-courriel" placeholder="xyz@mail.com">
+
+                        <div class="info">
+                            <input type="checkbox" id="ckb-info" name="ckb-info" value="infolettre">
+                            <label for="ckb-info">Je veux recevoir l'infolettre</label>
+                        </div>
+                    </fieldset>
+                    <div class="submit">
+                        <input type="submit" value="soumettre la réservation">
+                    </div>
+
+                </div>
+
+
+            </form>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="jspace-between fot570">
+            <p><a href="mailto:SaveursNomades@gmail.com"><i class="fa-regular fa-envelope"></i></a>Réalisé par : Brian
+                Belleau</p>
+            <p class="border-dec2">Réseaux sociaux :
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            </p>
+        </div>
+        <div class="border-dec jspace-between">
+            <p>Intégration web 1</p>
+            <div class="align-itemsc wid-15">
+                <a href="https://www.lecegep.ca/fr/etablissements/cegep-garneau">
+                    Cégep Garneau
+                </a>
+                <p>Hiver 2025</p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
